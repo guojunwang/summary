@@ -28,12 +28,12 @@
 [magic data-transition="cover-circle"]
 ## 
 ----
-![](/images/gay.jpg)
+![](/gits/images/gay.jpg)
 ====
 ## Git is Not Gay!!!
 ====
 ## Git 作者 Linus
-![](/images/git-author.jpg)
+![](/gits/images/git-author.jpg)
 [/magic]
 
 
@@ -66,13 +66,13 @@ Git也由此诞生了。
 
 [slide]
 ## 集中式版本控制 VS 分布式版本控制
-![](/images/vcs-jizhongshi.png)
-![](/images/vcs-fenbushi.png)
+![](/gits/images/vcs-jizhongshi.png)
+![](/gits/images/vcs-fenbushi.png)
 
 [slide]
 ## SVN 存储机制 VS Git 存储机制
-![](/images/store-svn.png)
-![](/images/store-git.png)
+![](/gits/images/store-svn.png)
+![](/gits/images/store-git.png)
 
 
 [slide] 
@@ -134,32 +134,32 @@ $ git config --global alias.hist = "log --oneline --decorate --graph --all"
 
 [slide]
 ## Git 工作流程-**Git 对象的存储类型及分类**
-![](/images/git-obj.png)
+![](/gits/images/git-obj.png)
 
 
 [slide]
 ##  Git 工作流程-**Git 仓库初始化及克隆**
-![](/images/git-repo-type.png)
+![](/gits/images/git-repo-type.png)
 
 
 [slide]
 ##  Git 工作流程-**Git 基本流程**
-![](/images/git-flow.png)
+![](/gits/images/git-flow.png)
 
 
 [slide]
 [magic data-transition="cover-circle"]
 ## Git 暂存区-图解
-![](/images/git-cached-01.png)
+![](/gits/images/git-cached-01.png)
 ====
 ## Git 暂存区-图解
-![](/images/git-cached-02.png)
+![](/gits/images/git-cached-02.png)
 ====
 ## Git 暂存区-图解
-![](/images/git-cached-03.png)
+![](/gits/images/git-cached-03.png)
 ====
 ## Git 暂存区-图解
-![](/images/git-cached-04.png)
+![](/gits/images/git-cached-04.png)
 [/magic]
 
 
@@ -213,29 +213,29 @@ $ git show v0.1.2
 
 [slide]
 ## Git 本地分支与合并-**brand、tag图解**
-![](/images/git-tag.png)
+![](/gits/images/git-tag.png)
 
 [slide]
 ## Git 本地分支与合并-**git checkout**
 - *当不指定文件名*，而是给出一个（本地）分支时，那么HEAD标识会移动到那个分支（也就是说，我们“切换”到那个分支了）  
-![](/images/git-checkout-02.jpg)
+![](/gits/images/git-checkout-02.jpg)
 
 
 [slide]
 ## Git 本地分支与合并-**git checkout**
 - git checkout -b name来创建并切换到新分支
-![](/images/git-checkout-03.jpg)
+![](/gits/images/git-checkout-03.jpg)
 
 [slide]
 ## Git 本地分支与合并-**git merge**
 - merge 命令把不同分支合并起来。合并前，索引必须和当前提交相同。如果另一个分支是当前提交的祖父节点，那么合并命令将什么也不做。 另一种情况是如果当前提交是另一个分支的祖父节点，就导致fast-forward合并。指向只是简单的移动，并生成一个新的提交
-![](/images/git-merge-01.jpg)
+![](/gits/images/git-merge-01.jpg)
 
 
 [slide]
 ## Git 本地分支与合并-**git merge**
 - 否则就是一次真正的合并。默认把当前提交(ed489 如下所示)和另一个提交(33104)以及他们的共同祖父节点(b325c)进行一次三方合并。结果是先保存当前目录和索引，然后和父节点33104一起做一次新提交。
-![](/images/git-merge-02.jpg)
+![](/gits/images/git-merge-02.jpg)
 
 
 [slide]
@@ -257,7 +257,7 @@ $ git show v0.1.2
 
 [slide]
 ## Git 查看与对比历史记录-**git diff**
-![](/images/git-diff.jpg)
+![](/gits/images/git-diff.jpg)
 
 
 [slide]
@@ -277,7 +277,7 @@ $ git show v0.1.2
 [slide]
 ## Git 撤销修改-**git checkout**
 - *当给定某个文件名*时，git会从指定的提交中拷贝文件到暂存区域和工作目录。比如，git checkout HEAD~ foo.c会将提交节点HEAD~(即当前提交节点的父节点)中的foo.c复制到工作目录并且加到暂存区域中。（如果命令中没有指定提交节点，则会从暂存区域中拷贝内容。）
-![](/images/git-checkout-01.jpg)
+![](/gits/images/git-checkout-01.jpg)
 
 
 [slide]
@@ -286,7 +286,7 @@ $ git show v0.1.2
 - 如果不给选项，那么当前分支指向到那个提交。
 - 如果用--hard选项，那么工作目录也更新
 - 如果用--soft选项，那么都不变。
-![](/images/git-reset-01.jpg)
+![](/gits/images/git-reset-01.jpg)
 
 
 [slide]
@@ -294,13 +294,13 @@ $ git show v0.1.2
 - 如果没有给出提交点的版本号，那么默认用HEAD。
 - git reset索引回滚到最后一次提交。
 - git reset --hard索引和工作区全都回滚到最后一次提交。
-![](/images/git-reset-02.jpg)
+![](/gits/images/git-reset-02.jpg)
 
 
 [slide]
 ## Git 撤销修改-**git reset**
 - 如果给了文件名，那么工作效果和带文件名的checkout差不多，除了索引被更新。
-![](/images/git-reset-03.jpg)
+![](/gits/images/git-reset-03.jpg)
 
 
 [slide]
@@ -319,7 +319,7 @@ $git revert HEAD^
 #比如：fa042ce57ebbe5bb9c8db709f719cec2c58ee7ff）撤销指定的版本，撤销也会作为一次提交进行保存。
 $git revert commit
 ```
-![](/images/git-revert-01.png)
+![](/gits/images/git-revert-01.png)
 
 
 [slide]
@@ -332,13 +332,13 @@ $git revert commit
 [slide]
 ## 重写历史记录-git commit --amend
 - 更改一次提交，git会使用与当前提交相同的父节点进行一次新提交，旧的提交会被取消
-![](/images/git-commit-amend.jpg)
+![](/gits/images/git-commit-amend.jpg)
 
 
 [slide]
 ## 重写历史记录-**git rebase**
 - 衍合是合并命令的另一种选择。合并把两个父分支合并进行一次提交，提交历史不是线性的。衍合在当前分支上重演另一个分支的历史，提交历史是线性的。
-![](/images/git-rebase-01.jpg)
+![](/gits/images/git-rebase-01.jpg)
 
 
 [slide]
